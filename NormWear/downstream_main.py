@@ -62,7 +62,7 @@ if __name__ == '__main__':
             if abs(len(all_fns) - len(all_sample_fns)) > 1:
                 embedding_ready = False
 
-        # prepare embed if not ready
+        #prepare embed if not ready
         if args.prepare_embed or not embedding_ready:
             print("Preparing Embedding for {} ...".format(args.ds_name))
             root_prefix = args.data_path.rstrip("/").rstrip("\\") + "/"
@@ -87,6 +87,9 @@ if __name__ == '__main__':
                 all_results = dict()
         
         all_results[dataset] = curr_res
+
+        # Make sure the directory exists
+        os.makedirs(os.path.dirname(save_name), exist_ok=True)
 
         # write new results
         with open(save_name, 'wb') as f:
