@@ -1,0 +1,6 @@
+data/
+*.db
+*.sqlite
+*.sqlite3
+*.h5
+*.pth
