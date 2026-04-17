@@ -26,7 +26,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # ── Chargement des Modèles ────────────────────────────────
 try:
-    clf = joblib.load('fatigue_tree.joblib')
+    clf = joblib.load('ML_Pipeline/saved_models/fatigue_tree.joblib')
     from NormWear.main_model import NormWearModel
 
     model = NormWearModel(weight_path=WEIGHT_PATH, optimized_cwt=True).to(device)
