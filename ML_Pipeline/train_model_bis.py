@@ -78,7 +78,7 @@ X_test_scaled = scaler.transform(X_test)
 
 # Réduction de dimensionnalité (PCA)
 print("  → PCA (7680 → 256)...")
-pca = PCA(n_components=256, random_state=42)
+pca = PCA(n_components=50, random_state=42)
 X_train_pca = pca.fit_transform(X_train_scaled)
 X_test_pca = pca.transform(X_test_scaled)
 
@@ -96,7 +96,7 @@ skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
 print("\n[Model 1] RandomForest (tuné)...")
 rf_clf = RandomForestClassifier(
     n_estimators=300,
-    max_depth=25,
+    max_depth=5,
     min_samples_split=5,
     min_samples_leaf=2,
     class_weight='balanced',
@@ -114,7 +114,7 @@ print(f"  Accuracy CV: {rf_cv['test_accuracy'].mean():.4f} (+/- {rf_cv['test_acc
 print("\n[Model 2] GradientBoosting (tuné)...")
 gb_clf = GradientBoostingClassifier(
     n_estimators=200,
-    max_depth=7,
+    max_depth=5,
     learning_rate=0.05,
     subsample=0.8,
     min_samples_split=5,
@@ -132,7 +132,7 @@ print("4️⃣  ENTRAÎNEMENT FINAL")
 print("=" * 60)
 
 # Choisir le meilleur modèle basé sur CV
-if 0['test_f1_weighted'].mean() > gb_cv['test_f1_weighted'].mean():
+if rf_cv['test_f1_weighted'].mean() > gb_cv['test_f1_weighted'].mean():
     print("  → RandomForest sélectionné (meilleur CV F1)")
     best_clf = rf_clf
     best_name = "RandomForest"
