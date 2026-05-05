@@ -1,0 +1,118 @@
+[
+    {
+        "name": "MLP_Tanh",
+        "score": 0.6264739792823134
+    },
+    {
+        "name": "HistGradientBoosting",
+        "score": 0.6256391718688344
+    },
+    {
+        "name": "GradientBoosting",
+        "score": 0.6183789178500766
+    },
+    {
+        "name": "LogisticRegression_L2",
+        "score": 0.6176866262538377
+    },
+    {
+        "name": "MLP_S2",
+        "score": 0.6136698493479515
+    },
+    {
+        "name": "MLP_S1",
+        "score": 0.6121270246635506
+    },
+    {
+        "name": "LinearSVC",
+        "score": 0.6114628393274227
+    },
+    {
+        "name": "Logistic_Balanced",
+        "score": 0.6110593345219322
+    },
+    {
+        "name": "SVM_RBF",
+        "score": 0.6108385438683698
+    },
+    {
+        "name": "MLP_S3",
+        "score": 0.6094194346895357
+    },
+    {
+        "name": "SGD_Classifier",
+        "score": 0.6052702263590524
+    },
+    {
+        "name": "SVM_Weighted",
+        "score": 0.604621678551645
+    },
+    {
+        "name": "MLP_StrongReg",
+        "score": 0.6033416772628094
+    },
+    {
+        "name": "ExtraTrees_100",
+        "score": 0.587272640931017
+    },
+    {
+        "name": "RandomForest_300",
+        "score": 0.5868286930041033
+    },
+    {
+        "name": "AdaBoost_Base",
+        "score": 0.5843757737649523
+    },
+    {
+        "name": "RandomForest_100",
+        "score": 0.583332090334545
+    },
+    {
+        "name": "Bagging_DT",
+        "score": 0.5832620450054165
+    },
+    {
+        "name": "SVM_Poly",
+        "score": 0.5772234280517542
+    },
+    {
+        "name": "RandomForest_Balanced",
+        "score": 0.5695707686635784
+    },
+    {
+        "name": "RidgeClassifier",
+        "score": 0.5488571249929332
+    },
+    {
+        "name": "DecisionTree_Depth10",
+        "score": 0.5311918836607419
+    },
+    {
+        "name": "GaussianNB",
+        "score": 0.5176420389314139
+    },
+    {
+        "name": "DecisionTree_Entropy",
+        "score": 0.5162583032545318
+    },
+    {
+        "name": "DecisionTree_Gini",
+        "score": 0.5157897629611863
+    },
+    {
+        "name": "KNN_5_Distance",
+        "score": 0.5068643431595963
+    },
+    {
+        "name": "KNN_5_Euclidean",
+        "score": 0.5044972454926755
+    },
+    {
+        "name": "KNN_3_Euclidean",
+        "score": 0.5038831965547871
+    },
+    {
+        "name": "LDA",
+        "score": 0.4108654842490903
+    }
+]

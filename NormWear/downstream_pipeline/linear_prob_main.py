@@ -4,6 +4,7 @@ import pickle
 import argparse
 from tqdm import tqdm
 
+from path import DATA_PATH
 from .task_specification import *
 from .corrected_linear_prob import *
 
@@ -82,7 +83,7 @@ def launch_linear_prob(args, embed_root, all_fns):
 
     # get split
     # print("Fetching data split...")
-    split = json.load(open("../data/{}/train_test_split.json".format(args.ds_name)))
+    split = json.load(open(os.path.join(DATA_PATH,"{}/train_test_split.json".format(args.ds_name))))
 
     # load data
     x_train, y_train, x_test, y_test = list(), dict(), list(), dict()

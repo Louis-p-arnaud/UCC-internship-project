@@ -59,7 +59,8 @@ class NormWearModel(nn.Module):
     def get_embedding(self, sample_data, sampling_rate=65, device=torch.device('cpu')):
         # data: [bn, nvar, L]
         if torch.is_tensor(sample_data):
-            sample_data = sample_data.numpy()
+            #sample_data = sample_data.numpy()
+            sample_data = sample_data.cpu().numpy()
         sample_data = sample_data.astype(np.float32)
 
         # resample
