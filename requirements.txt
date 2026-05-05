@@ -1,0 +1,14 @@
+torch>=1.9.0
+torchaudio
+timm
+transformers
+scipy
+scikit-learn
+pandas
+tabulate
+tqdm
+matplotlib
+pyserial
+numpy
+git+https://github.com/amazon-science/chronos-forecasting.git
+git+https://github.com/lukemelas/PyTorch-Pretrained-ViT.git
